@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando um pouco</title>
+
+    <style>
+        input{
+            margin-left: 15px;
+            margin-bottom: 3px;
+            border-radius: 8px;
+            text-align: center;
+            width: 85px;
+            height: 20px;
+        }
+
+        input#p2{
+            margin-left: 0px;
+            margin-right: 12px;
+        }
+        input#alt2{
+            margin-left: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Taxa metabólica basal</h1>
+
+    Peso em kg: <input type="number" name="" id="peso1">
+    <br>
+    Idade em anos: <input type="number" name="" id="idade1">
+    <br>
+    Altura em cm: <input type="number" name="" id="altura1">
+    <br>
+    Sexo (M/F):  <input type="text" name="" id="sexo1">
+    <input type="button" value="Verificar" onclick="analisar()">
+
+    
+    <div id="resultado1">
+
+    </div>
+
+
+    <h1>Calculadora de IMC</h1>
+    Peso em kg: <input type="number" name="" id="p2">
+    Altura em cm: <input type="number" name="" id="alt2">
+    <input type="button" value="Verificar" onclick="analisar2()">
+
+    
+    <div id="resultado2"></div>
+    
+    <div id="resultado3"></div>
+
+    <!--<iframe src="https://pt.calcuworld.com/nutricao/taxa-de-metabolismo-basal-metodo-harris-benedict/?iframe=1" width="100%" height="400"></iframe><!-->
+
+    <script>
+
+        function analisar(){
+            var peso = Number(document.querySelector('input#peso1').value)
+            var idade = Number(document.querySelector('input#idade1').value)
+            var altura = Number(document.querySelector('input#altura1').value)
+            var sexo = String(document.querySelector('input#sexo1').value.toUpperCase())
+
+            var result = document.querySelector('div#resultado1')
+
+            if(sexo == 'M') {
+                var taxa = 66 + (13.8 * peso) + (5 * altura) - (6.8 * idade)
+
+                result.innerHTML = taxa.toFixed(2)+'kcal'
+            } else {
+                var taxa = 655 + (9.6 * peso) + (1.9 * altura) - (4.7 * idade)
+                result.innerHTML = `Sua taxa metabólica basal é de ${taxa.toFixed(2)}kcal`
+            }
+
+            if(peso == '' || idade == '' || altura == '' || sexo == ''){
+                result.innerHTML = 'Favor preencher todos os campos.'
+            }
+
+        }
+
+        function analisar2(){
+            var peso2 = Number(document.querySelector('input#p2').value)
+            var altura2 = Number(document.querySelector('input#alt2').value)
+
+            result2 = document.querySelector('div#resultado2')
+            result3 = document.querySelector('div#resultado3')
+
+            var calculo = peso2 / ((altura2/100) * (altura2/100))
+
+            result2.innerHTML = `Seu IMC é de <strong>${calculo.toFixed(1)}</strong>`
+
+            if (calculo < 18.5) {
+                result3.innerHTML = 'Você está abaixo do peso.'
+            } else {
+                if (calculo > 18.5 && calculo < 24.9) {
+                    result3.innerHTML = 'Você está no peso normal.'
+            }   else  {
+                    result3.innerHTML = 'Você está acima do peso.'
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #78797854;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 5px 10px 15px 30px;
+            margin: 2px;
+        }
+
+        nav {
+            background-color: #a09e9e54;
+            padding: 5px 10px;
+            box-shadow: 2px 3px 5px #00000052;
+            border-radius: 5px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            margin-right: 30px;
+            color: #5e5b5b;
+            font-weight: bold;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: #2b2929;
+        }
+
+        main {
+            background-color: white;
+            padding: 5px 10px 10px 10px;
+            margin: 10px;
+            box-shadow: 2px 3px 5px 2px #00000052;
+
+            border-radius: 6px;
+        }
+
+        article {
+            background-color: #58565654;
+            padding: 5px 20px;
+            margin: 5px;
+
+            border-radius: 2px;
+        }
+
+        article > aside {
+            background-color: #47454554;
+            
+            padding: 5px;
+
+            border-radius: 2px;
+            
+        }
+
+        aside > p {
+            margin: 0px;
+            padding: 3px;
+        }
+
+        footer {
+            background-color: #787978bb;
+            padding: 8px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Todas essas tags são tipo divs, só que com nomes para organização -->
+
+    <header>   
+        <h1>Meu site de exemplo</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+
+    <main> 
+        
+        <main id="Contrato">
+            <article>
+                <h2>Contrato</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta velit explicabo quos adipisci. Ut quis accusantium exercitationem ea dicta minima cum, voluptatum repellat, fuga architecto, amet sapiente voluptatem nulla dolores?</p>
+                <aside>
+                    <p>Salve</p>
+                </aside>
+            </article>
+        </main>
+
+        <section id="notícias">
+
+            <article>
+                <h2>Notícias mundiais</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea vero amet nulla inventore, temporibus veniam, alias, ducimus vel quos architecto placeat rem. Assumenda pariatur corrupti, consequuntur eveniet eum veniam autem?</p>
+                <aside> <!--tag relacionada aos artigos(article)-->
+                    <p>Escrito por mim :)</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido por Thúzin</p>
+    </footer>
+
+</body>
+</html>

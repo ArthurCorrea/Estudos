@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começando com Javascript</title>
+
+    <style>
+
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+            background-color: rgba(99, 131, 153, 0.774);
+        }
+
+        h1{
+            color: rgb(94, 94, 211);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Mexendo com operadores em Javascript.</h1>
+    <p>Oláa, Mundo!</p>
+
+    <script> 
+
+        var numero1 = parseFloat(prompt('Digite um número.'));
+        var numero2 = Number(prompt('Digite outro número.')); //Number se vira pra ver qual é o tipo de número
+
+        var soma = numero1 + numero2;
+        var multiplicação = numero1 * numero2;
+       
+        alert('O produto é '+ multiplicação);
+        //concatenação
+
+        alert('A soma é '+ String(soma)); //String converte um número em uma string
+
+        var nome = 'Arthur';
+        alert(`Olá, ${nome}! Parabéns, você tirou ${soma} na prova!`) //template string (usa-se crase)
+
+    </script>
+
+</body>
+
+</html>

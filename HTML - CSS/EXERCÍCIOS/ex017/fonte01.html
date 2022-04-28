@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+
+        /*
+
+        Medidas absolutas:
+        cm, mm, in(polegadas - 1,54cm), px(recomendada), pt, pc
+
+        Medidas relativas:
+        em(recomendada), ex, rem, vw, vh, %
+
+        16px = 1em
+        É recomendado usar sempre que possível o em
+
+        Por padrão, os navegadores colocam o tamanho da fonte como 16px, que é igual a 1em
+        */
+
+        body {
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            text-decoration: underline;
+        }
+
+        h1 {
+            
+        /*  shorthand font
+        Ordem: 
+            font-style: italic
+            font-weight: bolder
+            font-size: 3cm
+            font-family: 'Times New Roman'
+        */
+            font: italic bolder 3em 'Times New Roman';
+        }
+
+        h2 {
+            font: normal 2em 'Helvetica';
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Testando fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint placeat iste molestias incidunt explicabo officiis, magni, ipsa, nostrum debitis at voluptatem quae delectus minus fugiat dolores a sapiente. Temporibus, non?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, quibusdam facilis ea architecto nobis dolore quia libero blanditiis recusandae eligendi magni corrupti natus totam necessitatibus at, eos est repellendus nulla.</p>
+
+    <h2>Subtítulo de testando fontes</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam similique vel fuga numquam nam odio deleniti quos a expedita tenetur neque placeat, doloribus molestiae magnam, eligendi reiciendis. Saepe, sequi porro?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iste, recusandae, voluptatibus et repudiandae perspiciatis iure delectus voluptate, adipisci ad atque dolores veniam quae modi nam officiis tenetur provident dicta?</p>
+
+</body>
+
+</html>

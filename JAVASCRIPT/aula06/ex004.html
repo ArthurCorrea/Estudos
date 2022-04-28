@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgba(80, 133, 100, 0.527);
+            font: normal 20pt Calibri;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+
+    <script>
+
+        var nome = prompt('Digite seu nome: ');
+
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome possui ${nome.length} letras. <br>`) 
+        //document.write escreve dentro do próprio documento.
+        document.write(`Seu nome em maiúsculas: ${nome.toUpperCase()} <br>`)
+
+        document.write(`Seu nome em minúsculas: ${nome.toLowerCase()} &lt;&gt;<br>`)
+
+        var salário = Number(prompt('Digite seu salário: '))
+        document.write(`Seu salário é de ${salário.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`); //formata em versão monetária brasileira.
+        
+         
+    </script>
+</body>
+
+</html>

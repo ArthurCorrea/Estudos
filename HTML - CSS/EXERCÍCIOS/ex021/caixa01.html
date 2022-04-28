@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-level</title>
+
+    <style>
+
+        #teste01 {
+            
+            height: 300px;
+            width: 300px;
+            background-color: rgb(179, 182, 181);
+            border-width: 10px;
+            border-style: ridge;
+            border-color: rgb(202, 53, 53);
+            border-radius: 12px;
+
+
+            /*Essa é a ordem para padding recomendada*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 35px;
+            
+        }
+
+        #teste02 {
+            
+            height: 300px;
+            width: 300px;
+            background-color: rgb(179, 182, 181);
+            border-width: 10px;
+            border-style: groove;
+            border-color: rgb(202, 53, 53);
+            border-radius: 12px;
+            padding-top: 10px;
+            padding-left: 35px;
+
+
+            /*o outline fica entre a margem e a borda*/
+            outline-width: 15px;
+            outline-style: double;
+            outline-color: rgb(0, 0, 0);
+
+
+            /*Essa é ordem para margin recomendada*/
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+        }
+
+        #teste03 {
+            
+            height: 300px;
+            width: 300px;
+            background-color: rgb(179, 182, 181);
+
+            
+            /*Ordem para border: width, style, color*/
+            border: 10px ridge #ca3535;
+            border-radius: 12px;    /*border-radius não dá pra simplificar*/
+
+
+
+            /*Ordem para padding: top, right, bottom, left (lembra um relógio)*/
+            padding: 10px 10px 10px 35px; 
+            /*se forem as mesmas medidas, pode colocar só um valor
+              EX: padding: 10px 20px 
+              (top e bottom: 10px) (right e left: 20px)*/
+
+
+
+            /*Ordem para margin: top, right, bottom, left (lembra um relógio)*/
+            margin: 40px auto 20px auto; 
+            /*auto deixa centralizado*/
+
+
+
+            /*Ordem para outline: width, style, color*/
+            outline: 15px double rgb(69, 130, 172);
+            
+        }
+
+        a {
+            border: 10px dashed #1f1313;
+            padding: 10px;
+            margin: auto;
+            border-radius: 12px;
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1 id="teste01">Testando padding</h1>
+
+    <h1 id="teste02">Testando margin e outline</h1>
+
+    <h1 id="teste03">Testando shorthands</h1>
+
+    <p>Parágrafos também são exemplos de caixas box-level, mas os <a href="">links</a> são inline-level</p>
+
+
+</body>
+
+</html>

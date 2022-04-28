@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#area {
+            background: blue;
+            color: cornsilk;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--usar div#area ou div.classe cria a tag de uma vez só-->
+    <div id="area"> 
+        Oláaa
+    </div>
+
+    <script>
+        var area = document.querySelector('div#area')
+        area.addEventListener('click', clique)
+        area.addEventListener('mouseover', passar)
+        area.addEventListener('mouseout', saída)
+        area.addEventListener('mousedown', segurar)
+
+        function clique(){
+            area.innerHTML = 'Clicado'
+            area.style.background = 'green'
+            area.style.color = 'white'
+        }
+
+        function passar(){
+            area.innerHTML = 'Passado'
+            area.style.background = 'red'
+        }
+
+        function saída(){
+            area.innerHTML = 'Saiu'
+            area.style.background = 'blue'
+        }
+
+        function segurar(){
+            area.innerHTML = 'Segurando...'
+            area.style.background = 'yellow'
+            area.style.color = 'black'
+        }
+ 
+
+    </script>
+
+</body>
+
+</html>

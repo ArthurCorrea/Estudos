@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>Testando imagem dinâmica</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagemp.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagemm.png" type="image/png">
+        <img src="imagens/imagemg.png" alt="texto flexível">
+    </picture>
+    
+<h1>Colocando áudios.</h1>
+
+<p><audio src="midia/guanacast.mp3" controls autoplay></audio></p>
+<!--MP3, WAV, OGG-->
+
+<audio src="midia/testeogg.ogg" controls autoplay></audio>
+
+<audio src="midia/testewav.wav" controls autoplay loop></audio> <!--NÃO É LEGAL USAR O WAV PORQUE É PESADO-->
+
+<audio>
+    <source src="midia/guanacast.mp3" type="audio/mpeg">
+    <source src="midia/testewav.wav" type="audio/wav">
+    <source src="midia/testeogg.ogg" type="audio/ogg">
+    <p>INCOMPATÍVEL</p>
+</audio>
+
+
+
+</body>
+
+</html>

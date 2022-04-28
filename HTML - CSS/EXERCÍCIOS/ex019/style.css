@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    background-color: #98cfcfcc;
+}
+
+h1 {
+    color: #0b2020;
+}
+
+#principal {
+    
+    text-align: center;
+    background-color: #50bbbbcc;
+    
+    border-radius: 5px;
+}
+
+h2 {
+    color: #4a6b6be3;
+}
+
+.aprendendo {
+    color: #0c2222e3;
+}
+
+.básico {
+    color: #2e8686e3;
+    font-weight: 600;
+}
+
+.intermediário {
+    color: #216161e3;
+}
+
+.avançado {
+    color: #163f3fe3;
+}
+
+.destaque {
+    font-weight: 600;
+}
