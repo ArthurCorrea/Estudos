@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center; /* alinhamento horizontal */
+            vertical-align: top; /* alinhamento vertical */
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+        .linha-colorida {
+            background-color: rgba(100, 100, 100, 0.288);
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Primeira tabela</h1>
+    <!--
+        Hierarquia de tabelas simples:
+        TABLE
+            TABLE ROW - linha
+                TABLE HEADER
+                TABLE DATA
+    -->
+    <table>
+
+        <tr> <!-- Primeira linha -->
+            <td>A1
+            <td>B1
+            <td>C1
+            <td>D1
+
+        <tr class="linha-colorida"> <!-- Segunda linha -->
+            <td>A2
+            <td>B2
+            <td>C2
+            <td>D2
+        
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+            <td>D3</td>
+        </tr> 
+
+        <tr class="linha-colorida">
+            <td class="numero">A4</td>
+            <td>B4</td>
+            <td>C4</td>
+            <td>D4</td>
+        </tr> <!-- /tr e /td são opcionais -->
+
+    </table>
+</body>
+</html>
