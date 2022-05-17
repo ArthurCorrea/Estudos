@@ -17,14 +17,35 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-weight: bold;
+            padding: 5px;
+            background-color: rgb(190, 189, 189);
+            
+        }
+
         thead, tfoot {
             background-color: rgb(102, 102, 102);
             color: rgb(228, 227, 227);
         }
 
+
+        /* Efeito zebrado 
+        even - par
+        odd - ímpar
+        2n - de 2 em 2 casas 
+        3n - de 3 em 3 casas */
+        tbody > tr:nth-child(even) { 
+            background-color: rgb(201, 201, 201);
+        }
+
         th, td {
             border: 1px solid black;
             padding: 8px;
+        }
+
+        .populacao {
+            width: 70px;
         }
 
         .numero {
@@ -40,6 +61,7 @@
     <!--
         Anatomia de tabelas grandes
         TABLE
+            CAPTION - LEGENDA
             THEAD
                 TR, TD, RH
             TBODY
@@ -48,10 +70,16 @@
                 TR, TD, TH
     -->
     <table>
+
+        <caption>
+            População por Estados Federativos
+        </caption>
+
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <!-- escopo = coluna -->
+                <th scope="col">Estado</th>
+                <th scope="col" class="populacao">População</th>
             </tr>
         </thead>
 
@@ -76,12 +104,13 @@
                 <td>Bahia</td>
                 <td class="numero">14.000.000</td>
             </tr>
-
+            
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <!-- escopo = linha -->
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero">97.000.000</td>
             </tr>
         </tfoot>
