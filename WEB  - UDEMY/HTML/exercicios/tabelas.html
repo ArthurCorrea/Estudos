@@ -1,0 +1,64 @@
+<style>
+
+    table {  
+        margin-top: 15px;
+        border-collapse: collapse;
+        width: 500px;
+    }
+
+    caption {
+        border: 1px solid black;
+        padding: 5px;
+        background-color: rgb(145, 145, 145);
+        color: white;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+    }
+
+    tbody tr:hover {
+        background-color: rgb(228, 228, 228);
+    }
+
+    tfoot tr {
+        color: white;
+        font-weight: bold;
+        background-color: rgb(112, 112, 112);
+    }
+
+</style>
+
+<table>
+    <caption>Produtos</caption>
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>iPhone</td>
+            <td>R$5.000,00</td>
+            <td>3</td>
+            <td>R$15.000,00</td>
+        </tr>
+        <tr>
+            <td>Galaxy S9</td>
+            <td>R$3.000,00</td>
+            <td>3</td>
+            <td>R$9.000,00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total</td>
+            <td>R$24.000,00</td>
+        </tr>
+    </tfoot>
+</table>

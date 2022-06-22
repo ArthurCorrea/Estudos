@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        div {
+            font-size: 40px;
+            padding: 30px;
+            border: 3px solid black;
+        }
+
+        .static {
+            top: 100px;
+            left: 100px;
+            background-color: rgb(79, 161, 209);      
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 0px;
+            background-color: rgb(226, 81, 81);
+        }
+
+        .relative1 {
+            position: relative;
+            left: 50px;
+            top: 5px;
+            background-color: rgb(146, 212, 79);
+        }
+
+        .absolute1 {
+            position: absolute;
+            left: 300px;
+            top: 110px;
+            background-color: rgb(235, 235, 93);
+        }
+
+        .relative2 {
+            position: relative;
+            left: 200px;
+            top: 2000px;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+
+        .absolute2 {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: cyan;
+        }
+
+        .sticky {
+            position: sticky; /* interessante pra menu que acompanha a rolagem*/
+            background-color: grey;
+            top: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="static">Static (Padrão)</div>
+    <div class="fixed">Fixed</div>
+    <div class="relative1">Relative</div>
+    <div class="absolute1">Absolute</div>
+
+    <div class="relative2">
+        <div class="absolute2"></div>
+    </div>
+
+    <div class="sticky">Sticky</div>
+    <p style="padding-bottom: 2000px;">Opa</p>
+</body>
+
+</html>
