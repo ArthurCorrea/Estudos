@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID 03</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 100px auto 1fr auto auto auto;
+
+            gap: 13px;
+        }
+
+        .cabecalho, .navegacao, .conteudo, .sidebar, .ads, .rodape {
+            border: 2px solid black;
+        }
+
+        .cabecalho {
+            grid-column: 1 / span 12;
+        }
+
+        .navegacao {
+            grid-column: 3 / span 8;
+        }
+
+        .conteudo {
+            grid-column: 3 / span 8;
+        }
+
+        .sidebar {
+            grid-row: 2 / 4;
+        }
+
+        .ads {
+            grid-column: 11 / span 2;
+            grid-row: 2 / 4;
+        }
+
+        .rodape {
+            grid-column: 1 / span 12;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+    <header class="cabecalho">cabecalho</header>
+    <nav class="navegacao">navegacao</nav>
+    <div class="sidebar">sidebar</div>
+    <main class="conteudo">conteudo</main>
+    <div class="ads">ads</div>
+    <footer class="rodape">rodape</footer>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    
+    <div>
+        <!-- onclick="irEm5s(event)" -->
+        <a href="https://google.com.br">Google</a>
+    </div>
+    
+    <script>
+
+        function irEm3s(e) {
+            e.preventDefault()
+            alert('Saindo em 3s...')
+            setTimeout(() => {
+                window.location.href = e.target.href
+            }, 3000)
+        }
+
+        // Outra forma
+        const a = document.querySelector('a')
+        a.onclick = irEm3s
+    </script>
+</body>
