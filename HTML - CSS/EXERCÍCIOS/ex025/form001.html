@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <h1>Primeiro formulário</h1>
+    <!-- get - padrão (usar quando dados não forem sensíveis)
+        (só pode enviar até 3000B de dados - ou 3000 letras)
+
+        post - usar com dados sensíveis, mais de 3000B e envio de arquivos (fotos, etc) -->
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p>
+            <!-- label = id -->
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+
+</html>
