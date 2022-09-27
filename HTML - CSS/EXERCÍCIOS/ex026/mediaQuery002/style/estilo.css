@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* Confifurações gerais */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233EFF;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
+    padding: 10px;
+}
