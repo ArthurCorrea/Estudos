@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 760px) {
+    .icon {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    menu > ul > li > a {
+        margin-left: 5px;
+        border-top: 0px;
+        border-radius: 4px;
+    }
+
+    main {
+        width: 900px;
+        padding: 10px;
+    }
+
+    article {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
