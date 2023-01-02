@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background: linear-gradient(to right,#c2c2c2, #808080);
+    font-size: 1.3em;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    padding: 15px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(240, 240, 240);
+    border: 2px solid black;
+    border-radius: 10px;
+}

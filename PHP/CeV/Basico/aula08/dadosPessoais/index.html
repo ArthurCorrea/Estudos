@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <title>Outro teste com formulários</title>
+</head>
+
+<body>
+    <div>
+        <h1>Exemplo 2</h1>
+        <form method="get" action="dados.php">
+            Nome: <input type="text" name="nome">
+            <br>
+            Ano de nascimento: <input type="number" name="ano">
+            <fieldset><legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masc" value="homem">
+                <label for="masc">Masculino</label> <br>
+                <input type="radio" name="sexo" id="fem" value="mulher">
+                <label for="fem">Feminino</label>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>
