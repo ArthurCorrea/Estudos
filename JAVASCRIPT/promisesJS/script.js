@@ -72,7 +72,7 @@ const resolveAll = Promise.all([p1, p2, p3]).then(data => {
 
 console.log('já foi executado antes do all()');
 
-// várias promessas com race
+//? ============= várias promessas com race =============
 const p4 = new Promise((resolve, reject) => {
     resolve('p5 ok');
 })

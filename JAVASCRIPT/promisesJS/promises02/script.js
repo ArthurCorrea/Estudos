@@ -38,7 +38,7 @@ somaNumeros.then((message) => {
     console.log(`Erro: ${err}`);
 })
 
-//? exemplo mais real
+//? exemplo mais real com consumo de API
 
 const divUsers = document.getElementById('users')
 const url = 'https://jsonplaceholder.typicode.com/users'

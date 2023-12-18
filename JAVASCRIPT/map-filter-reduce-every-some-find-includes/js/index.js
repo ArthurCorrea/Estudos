@@ -8,6 +8,13 @@ const doubleNumbers = numbers.map(function(element) {
 })
 console.log(doubleNumbers);
 
+//? ==============================
+
+
+
+//? ==============================
+
+
 // fazendo a mesma coisa, mas com arrow function
 const doubleNumbersArrowFunction = numbers.map( element => element * 2)
 console.log(doubleNumbersArrowFunction);
