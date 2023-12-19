@@ -10,6 +10,8 @@ function HelloWorld() {
 
             {/* também é possível importar de outros componentes*/}
             <Frase />
+            <Frase />
+            <Frase />
             
         </div>
     )
