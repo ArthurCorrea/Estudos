@@ -23,6 +23,7 @@ async function segundaFuncao() {
 
 segundaFuncao();
 
+
 //? algo mais prático com consumo de API
 function getUser(id) {
     return fetch(`https://reqres.in/api/users?id=${id}`)
@@ -33,12 +34,14 @@ function getUser(id) {
 async function showUserName(id) {
     try {
         const user = await getUser(id)
-        console.log(`Nome de usuário: ${user.data.first_name}`);
+        console.table(`Nome de usuário: ${user.data.first_name}`);
+        console.table(`Nome de usuário: ${user.data.last_name}`);
+        console.table(`Nome de usuário: ${user.data.email}`);
+        console.table(`${user.data.first_name}, ${user.data.email}, ${user.data.last_name}`);
     
     } catch (error) {
         console.log(`erro: ${error}`);    
     }
-
 }
 
 showUserName(12)
