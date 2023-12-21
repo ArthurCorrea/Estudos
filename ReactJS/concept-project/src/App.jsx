@@ -4,6 +4,9 @@ import HelloWorld from './components/HelloWorld';
 import PropTesting from './components/PropTesting';
 import Pessoa from './components/Pessoa';
 import List from './components/List';
+import Evento from './components/Evento';
+import Form from './components/Form';
+import Condicional from './components/Condicional';
 
 function App() {
 
@@ -21,7 +24,7 @@ function App() {
 
     <div className="App">
       <header className="App-header">
-        <h1>Olá, senhor React!</h1>
+        <h1>Olá!!</h1>
         
         <p>
           Primeiro projeto em React, aprendendo os conceitos iniciais.
@@ -59,7 +62,7 @@ function App() {
       {/* usando props */}
       <section className='App-section01'>
         <h3>Usando props</h3>
-        <PropTesting nome='Arthur'/>
+        <PropTesting nome='Roberto'/>
 
         <Pessoa 
         //? aqui serão passados os parâmetros do componente
@@ -73,6 +76,27 @@ function App() {
       {/* usando fragments */}
       <section className='App-section01'>
         <List />
+      </section>
+
+      {/* usando eventos onClick */}
+      <section className="App-section01">
+        <Evento  />
+        <Evento />
+      </section>
+
+      {/* usando eventos onSubmit */}
+      <section className="App-section01">
+        <div>
+          <Form />
+        </div>
+      </section>
+
+
+      {/* usando condicionais */}
+      <section className="App-section01">
+        <div>
+          <Condicional />
+        </div>
       </section>
 
     </div>   
