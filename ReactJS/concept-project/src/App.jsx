@@ -1,6 +1,9 @@
 import './App.css';
 //* importando componente externo
 import HelloWorld from './components/HelloWorld';
+import PropTesting from './components/PropTesting';
+import Pessoa from './components/Pessoa';
+import List from './components/List';
 
 function App() {
 
@@ -15,6 +18,7 @@ function App() {
   const url = 'https://via.placeholder.com/150';
 
   return (
+
     <div className="App">
       <header className="App-header">
         <h1>Olá, senhor React!</h1>
@@ -52,7 +56,26 @@ function App() {
         <HelloWorld />
       </section>
 
-    </div>
+      {/* usando props */}
+      <section className='App-section01'>
+        <h3>Usando props</h3>
+        <PropTesting nome='Arthur'/>
+
+        <Pessoa 
+        //? aqui serão passados os parâmetros do componente
+          nome="Arthur" 
+          idade="20" 
+          profissao="Developer" 
+          foto="https://via.placeholder.com/150/"
+        />
+      </section>
+
+      {/* usando fragments */}
+      <section className='App-section01'>
+        <List />
+      </section>
+
+    </div>   
   );
 }
 

@@ -1,8 +1,11 @@
+//? importando CSS para um módulo específico
+import styles from './Frase.module.css';
+
 function Frase() {
 
     return(
-        <div>
-            <p>Componente com uma frase</p>
+        <div className={styles.fraseContainer}>
+            <p className={styles.fraseContent}>Componente com uma frase</p>
         </div>
     )
 

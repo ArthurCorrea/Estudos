@@ -1,0 +1,10 @@
+/*? é possível usar CSS com a padronização do NomeComponente.module.css  */
+.fraseContainer {
+    background-color: rgb(165, 138, 190);
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.fraseContent {
+    color: rgb(192, 192, 24);
+    text-align: center;
+}
