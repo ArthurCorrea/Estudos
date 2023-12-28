@@ -1,63 +1,107 @@
 {
-    "projects": [
-        {
-        "name": "fasdffasdfdfsadf",
-        "budget": "2222",
-        "category": {
+  "projects": [
+    {
+      "name": "fasdffasdfdfsadf",
+      "budget": "2222",
+      "category": {
         "id": "3",
         "name": "Design"
-        },
-        "cost": 0,
-        "services": [],
-        "id": 1
-        },
-        {
-        "name": "fasdffasdfdfsadf",
-        "budget": "2222",
-        "category": {
-        "id": "3",
-        "name": "Design"
-        },
-        "cost": 0,
-        "services": [],
-        "id": 2
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
     },
     {
-        "name": "teste01",
-        "budget": "22223",
-        "category": {
+      "name": "fasdffasdfdfsadf",
+      "budget": "2222",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "teste01",
+      "budget": "22223",
+      "category": {
         "id": "5",
         "name": "Marketing"
-        },
-        "cost": 0,
-        "services": [],
-        "id": 3
-    }
-    ],
-    "categories": [
-    {
-        "id": 1,
-        "name": "CyberSecurity"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
     },
     {
-        "id": 2,
-        "name": "Desenvolvimento"
-    },
-    {
-        "id": 3,
+      "name": "123",
+      "budget": "222111",
+      "category": {
+        "id": "3",
         "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
     },
     {
-        "id": 4,
-        "name": "DevOps"
-    },
-    {
-        "id": 5,
-        "name": "Marketing"
-    },
-    {
-        "id": 6,
+      "name": "Fibron",
+      "budget": "100000",
+      "category": {
+        "id": "6",
         "name": "I.A"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "name": "Fibron",
+      "budget": "21111",
+      "category": {
+        "id": "1",
+        "name": "CyberSecurity"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
+    },
+    {
+      "name": "Fibron",
+      "budget": "122211",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 7
     }
-    ]
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "CyberSecurity"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "DevOps"
+    },
+    {
+      "id": 5,
+      "name": "Marketing"
+    },
+    {
+      "id": 6,
+      "name": "I.A"
+    }
+  ]
 }
