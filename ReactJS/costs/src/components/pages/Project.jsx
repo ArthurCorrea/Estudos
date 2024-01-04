@@ -45,6 +45,8 @@ export default function Project() {
         }, 1000)
     }, [id])
 
+
+    //* função para criar um serviço
     function createService(project) {
         setMessage('')
 
@@ -83,6 +85,7 @@ export default function Project() {
 
     }
 
+    //* função para remover os serviços
     function removeService(id, cost) {
         setMessage('')
         
@@ -120,6 +123,7 @@ export default function Project() {
         setShowServiceForm(!showServiceForm)
     }
     
+    //* editar um post
     function editPost(project) {
         setMessage('')
         //? budget validation
@@ -151,16 +155,14 @@ export default function Project() {
 
     }
 
-
-
     return (
         <div>
             {project && (
                 project.name ? (
                     <div className={styles.project_detais}>
                         <Container customClass="column">
-                            {message &&  <Message type={type} message={message}/>
-
+                            {message &&  
+                                <Message type={type} message={message}/>
                             }
                             <div className={styles.detail_container}>
                                 <h1>Projeto: {project.name}</h1>
